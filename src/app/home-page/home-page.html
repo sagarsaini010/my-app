@@ -4,3 +4,11 @@
 }
 <input [value]="userName" type="text">
 <button (click)="changeValue()">Click me</button>
+
+@for (item of list; track $index) {
+    <p [style.background]="$even ? '#5319':'#2345'" [style.padding]="0" [style.margin]="0"
+    >
+        
+     {{item}}
+    </p>
+}
