@@ -1,0 +1,6 @@
+<h1>Parent component</h1>
+<!-- <app-child [name]="username"></app-child> -->
+<!-- <app-child (notify)="onMessage($event)"></app-child> -->
+<app-child #child ></app-child>
+
+<h3>Message = {{child.msg()}}</h3>

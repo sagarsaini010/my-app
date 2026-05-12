@@ -1,0 +1,46 @@
+h2{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+
+.valueTaken{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.valueTaken input {
+    font-size: large;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+}
+
+.valueTaken button{
+    border: none;
+    border-radius: 20px;
+    font-size: large;
+    color: blueviolet;
+    background-color: yellow;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+li span :hover{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: large;
+    color: blueviolet;
+    background-color: yellow;}

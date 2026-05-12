@@ -1,0 +1,17 @@
+<h2>TO-DO List</h2>
+<div class="valueTaken">
+<input [value]="newTodo()" (input)="newTodo.set($event.target.value)" placeholder="Write your task">
+<button (click)="addTodo()">Add Task</button>
+</div>
+<hr>
+
+@for (item of todos(); track $index) {
+    <li>
+    <span>{{$index + 1}}</span>
+    <span
+    (click)="toggleTodo($index)"
+    [style.text-decoration]="item.done ? 'line-through':'none'">{{item.task}}</span>
+    <button (click)="deleteTodo($index)">Delet</button>
+</li>
+}
+
